@@ -20,4 +20,11 @@ fun main() {
 
     // Memanggil fungsi kalkulasi status
     println("Status: ${calculateStatus(score)}")
+    // Memanggil fungsi kalkulasi status
+    println("Status: ${calculateStatus(score)}")
+
+    // TAMBAHKAN KODE INI DI SINI:
+    val studentId: String? = null
+    val idLength = studentId?.length ?: 0
+    println("Panjang ID: $idLength")
 }
