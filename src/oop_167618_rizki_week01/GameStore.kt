@@ -1,0 +1,29 @@
+package oop_167618_rizki_week01
+
+fun main() {
+    val gameTitle = "Black Myth: Wukong"
+    val price = 700000
+    val userNote: String? = null // Simulasi null safety challenge
+
+    val discount = calculateDiscount(price)
+    val finalPrice = price - discount
+
+    // Memanggil fungsi struk menggunakan Named Arguments
+    printReceipt(
+        title = gameTitle,
+        originalPrice = price,
+        finalPrice = finalPrice,
+        note = userNote
+    )
+}
+
+fun calculateDiscount(price: Int): Int = if (price > 500000) (price * 0.2).toInt() else (price * 0.1).toInt()
+
+fun printReceipt(title: String, originalPrice: Int, finalPrice: Int, note: String?) {
+    println("=== STRUK PEMBELIAN STEAMKW ===")
+    println("Game         : $title")
+    println("Harga Asli   : Rp $originalPrice")
+    println("Harga Akhir  : Rp $finalPrice")
+    println("Catatan      : ${note ?: "Tidak ada catatan"}")
+    println("===============================")
+}
