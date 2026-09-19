@@ -1,4 +1,4 @@
-package oop_167618_rizki_week02
+package oop_00000167618_MohamadRizkiPatriotik.week02
 
 class Hero(
     val name: String,

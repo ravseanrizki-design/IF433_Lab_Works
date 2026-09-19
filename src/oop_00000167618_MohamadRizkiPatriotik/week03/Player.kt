@@ -1,4 +1,4 @@
-package oop_167618_rizki_week03
+package oop_00000167618_MohamadRizkiPatriotik.week03
 
 class Player(val username: String) {
 

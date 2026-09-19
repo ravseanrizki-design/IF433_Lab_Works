@@ -1,4 +1,4 @@
-package oop_167618_rizki_week01
+package oop_00000167618_MohamadRizkiPatriotik.week01
 
 fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
 
@@ -16,8 +16,8 @@ fun main() {
     }
     println("Grade kamu: $grade")
 
-    println("Status: ${calculateStatus(score)}")
-    println("Status: ${calculateStatus(score)}")
+    println("Status: ${_root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)}")
+    println("Status: ${_root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)}")
 
     val studentId: String? = null
     val idLength = studentId?.length ?: 0
