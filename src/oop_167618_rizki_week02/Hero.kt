@@ -5,12 +5,11 @@ class Hero(
     val baseDamage: Int,
     var hp: Int = 100 // Default Argument HP = 100
 ) {
-    // Method simulasi serangan
+
     fun attack(targetName: String) {
         println("$name menebas $targetName!")
     }
 
-    // Method menerima damage dengan proteksi nilai minimum 0
     fun takeDamage(damage: Int) {
         hp -= damage
         if (hp < 0) {
@@ -18,7 +17,6 @@ class Hero(
         }
     }
 
-    // Mengembalikan status hidup hero
     fun isAlive(): Boolean {
         return hp > 0
     }
