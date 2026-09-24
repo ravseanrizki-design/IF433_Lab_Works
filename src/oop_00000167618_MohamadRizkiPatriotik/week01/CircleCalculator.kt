@@ -1,4 +1,4 @@
-package oop_00000167618_MohamadRizkiPatriotik.week01
+package oop_00000167618_MohamadRizkiPatriotik.week04
 
 fun main() {
     val radius = 7.0
@@ -6,7 +6,7 @@ fun main() {
     val area = pi * radius * radius
 
     println("Radius: $radius, Area: $area")
-    println(_root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.checkSize(area))
+    println(checkSize(area))
 }
 
 

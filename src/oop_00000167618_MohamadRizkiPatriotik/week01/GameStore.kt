@@ -1,15 +1,15 @@
-package oop_00000167618_MohamadRizkiPatriotik.week01
+package oop_00000167618_MohamadRizkiPatriotik.week04
 
 fun main() {
     val gameTitle = "Black Myth: Wukong"
     val price = 700000
     val userNote: String? = null // Simulasi null safety challenge
 
-    val discount = _root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateDiscount(price)
+    val discount = calculateDiscount(price)
     val finalPrice = price - discount
 
     // Memanggil fungsi struk menggunakan Named Arguments
-    _root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.printReceipt(
+    printReceipt(
         title = gameTitle,
         originalPrice = price,
         finalPrice = finalPrice,

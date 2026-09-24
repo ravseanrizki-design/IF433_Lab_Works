@@ -16,8 +16,8 @@ fun main() {
     }
     println("Grade kamu: $grade")
 
-    println("Status: ${_root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)}")
-    println("Status: ${_root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)}")
+    println("Status: _root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)")
+    println("Status: _root_ide_package_.oop_00000167618_MohamadRizkiPatriotik.week01.calculateStatus(score)")
 
     val studentId: String? = null
     val idLength = studentId?.length ?: 0
