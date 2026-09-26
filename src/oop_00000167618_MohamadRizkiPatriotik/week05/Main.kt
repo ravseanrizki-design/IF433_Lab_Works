@@ -68,12 +68,4 @@ fun main() {
         payment.processPayment(75000.0)
     }
 
-    println("\n=== SMART CASTING CHALLENGE: TOP UP OTOMATIS UNTUK EWALLET ===")
-    for (payment in daftarPembayaran) {
-        if (payment is EWallet) {
-            println("Terdeteksi EWallet, melakukan top up otomatis...")
-            payment.topUp(50000.0)
-            payment.processPayment(75000.0) // seharusnya berhasil kali ini
-        }
-    }
-}
+
