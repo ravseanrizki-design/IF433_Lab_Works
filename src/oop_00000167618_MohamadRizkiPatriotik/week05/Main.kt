@@ -53,28 +53,5 @@ fun main() {
     val luasLingkaran = mathHelper.hitungLuas(7.0)
     println("Luas lingkaran (jari-jari = 7.0): $luasLingkaran")
 
-    // ===================================================================
-    // TUGAS MANDIRI 2: Sistem Pembayaran (Abstraction & Smart Casting)
-    // ===================================================================
 
-    println("\n=== SISTEM PEMBAYARAN E-COMMERCE ===")
-
-    val eWallet = EWallet(accountName = "Budi", balance = 50000.0)
-    val creditCard = CreditCard(accountName = "Ani", limit = 100000.0)
-
-    val daftarPembayaran: List<PaymentMethod> = listOf(eWallet, creditCard)
-
-    // Percobaan pembayaran pertama (EWallet seharusnya gagal, saldo < 75000)
-    for (payment in daftarPembayaran) {
-        payment.processPayment(75000.0)
-    }
-
-    println("\n=== SMART CASTING CHALLENGE: TOP UP OTOMATIS UNTUK EWALLET ===")
-    for (payment in daftarPembayaran) {
-        if (payment is EWallet) {
-            println("Terdeteksi EWallet, melakukan top up otomatis...")
-            payment.topUp(50000.0)
-            payment.processPayment(75000.0) // seharusnya berhasil kali ini
-        }
-    }
 }
