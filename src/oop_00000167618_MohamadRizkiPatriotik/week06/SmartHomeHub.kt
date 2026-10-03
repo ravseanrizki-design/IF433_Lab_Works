@@ -17,4 +17,15 @@ class SmartHomeHub {
         }
     }
 
-
+    fun activateSecurityMode() {
+        println("\n=== MODE KEAMANAN AKTIF ===")
+        for (device in devices) {
+            if (device is Recordable) {
+                device.startRecord()
+            }
+            if (device is SmartSpeaker) {
+                device.playMusic("Sirine Peringatan")
+            }
+        }
+    }
+}
