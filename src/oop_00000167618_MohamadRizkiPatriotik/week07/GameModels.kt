@@ -1,4 +1,4 @@
-package oop_000_nama.week07
+package oop_00000167618_MohamadRizkiPatriotik.week07
 
 enum class ItemRarity(val dropChance: Int) {
     COMMON(70),

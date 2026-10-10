@@ -1,5 +1,7 @@
 package oop_000_nama.week07
 
+import oop_00000167618_MohamadRizkiPatriotik.week07.ItemRarity
+
 class Weapon private constructor(val item: GameItem, val durability: Int) {
 
     companion object {
