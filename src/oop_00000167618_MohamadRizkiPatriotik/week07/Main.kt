@@ -1,6 +1,7 @@
 package oop_000_nama.week07
 
 import oop_00000167618_MohamadRizkiPatriotik.week07.DatabaseManager
+import oop_00000167618_MohamadRizkiPatriotik.week07.NetworkClient
 
 fun main() {
     // ===== LATIHAN 1: Singleton & Companion Object =====
