@@ -51,5 +51,9 @@ fun main() {
         println("Setelah upgrade: $upgradedItem")
                 println("Senjata awal tetap utuh: ${starterWeapon.item}")
 
+                processEvent(BattleState.SafeZone)
+                processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+                processEvent(BattleState.LootDropped(upgradedItem))
+                processEvent(BattleState.GameOver("Terkena jebakan racun"))
 
     }
