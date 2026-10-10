@@ -1,5 +1,7 @@
 package oop_000_nama.week07
 
+import oop_00000167618_MohamadRizkiPatriotik.week07.BattleState
+
 fun processEvent(event: BattleState) {
     when (event) {
         is BattleState.SafeZone ->

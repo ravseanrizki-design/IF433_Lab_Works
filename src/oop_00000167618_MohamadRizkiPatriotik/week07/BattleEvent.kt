@@ -1,4 +1,4 @@
-package oop_000_nama.week07
+package oop_00000167618_MohamadRizkiPatriotik.week07
 
 sealed class BattleState {
     data class MonsterEncounter(val monsterName: String) : BattleState()
