@@ -37,4 +37,9 @@ fun main() {
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
         ApiResponse.Loading -> "Tampilkan Spinner"
 
+        println("\n=== SIMULASI GAME MANAGER ===")
+                GameManager.startGame()
+                GameManager.startGame() // Kedua kali: harus ditolak oleh Singleton
+
+
     }
