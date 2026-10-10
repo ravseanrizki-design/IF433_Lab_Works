@@ -41,5 +41,15 @@ fun main() {
                 GameManager.startGame()
                 GameManager.startGame() // Kedua kali: harus ditolak oleh Singleton
 
+                println("\n=== SIMULASI FACTORY & ENUM ===")
+                println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+            val starterWeapon = Weapon.forgeStarterSword()
+        println("Senjata awal: $starterWeapon")
+
+                println("\n=== BLACKSMITH & EVENT ===")
+            val upgradedItem = starterWeapon.item.copy(damage = 25)
+        println("Setelah upgrade: $upgradedItem")
+                println("Senjata awal tetap utuh: ${starterWeapon.item}")
+
 
     }
