@@ -36,7 +36,7 @@ Setiap checkpoint: `git add .` lalu `git commit -m "<pesan>"`.
 ## D. Tugas Mandiri
 | CP | Isi | Commit message |
 |----|-----|----------------|
-| 12 | `GameManager.kt` | `week07: (task) create GameManager singleton` |
+| 12 | `oop_00000167618_MohamadRizkiPatriotik.week07.GameManager.kt` | `week07: (task) create GameManager singleton` |
 | 13 | `GameModels.kt` hanya `enum ItemRarity` | `week07: (task) create ItemRarity enum` |
 | 14 | Tambah `data class GameItem` di `GameModels.kt` | `week07: (task) create GameItem data class` |
 | 15 | `WeaponForge.kt` | `week07: (task) implement factory pattern in WeaponForge` |
