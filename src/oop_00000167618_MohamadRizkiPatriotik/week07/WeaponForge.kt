@@ -1,6 +1,4 @@
-package oop_000_nama.week07
-
-import oop_00000167618_MohamadRizkiPatriotik.week07.ItemRarity
+package oop_00000167618_MohamadRizkiPatriotik.week07
 
 class Weapon private constructor(val item: GameItem, val durability: Int) {
 
