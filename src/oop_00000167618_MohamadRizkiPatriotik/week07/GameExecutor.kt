@@ -1,6 +1,4 @@
-package oop_000_nama.week07
-
-import oop_00000167618_MohamadRizkiPatriotik.week07.BattleState
+package oop_00000167618_MohamadRizkiPatriotik.week07
 
 fun processEvent(event: BattleState) {
     when (event) {
