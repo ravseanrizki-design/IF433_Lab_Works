@@ -13,7 +13,7 @@ Setiap checkpoint: `git add .` lalu `git commit -m "<pesan>"`.
 ## A. Latihan 1
 | CP | File yang dibuat/diubah | Commit message |
 |----|--------------------------|----------------|
-| 1 | `DatabaseManager.kt` (salin utuh) | `week07: create singleton DatabaseManager` |
+| 1 | `oop_00000167618_MohamadRizkiPatriotik.week07.DatabaseManager.kt` (salin utuh) | `week07: create singleton DatabaseManager` |
 | 2 | `NetworkClient.kt` **tanpa** companion object (class + `connect()` saja) dan `Main.kt` berisi `val client = NetworkClient("https://api.umn.ac.id")` (sengaja error) | `week07: (trial) trigger private constructor error on NetworkClient` |
 | 3 | `NetworkClient.kt` versi final (tambah companion object) | `week07: implement companion object as factory in NetworkClient` |
 | 4 | `Main.kt` diganti: hanya bagian `TEST SINGLETON` + `TEST COMPANION OBJECT` | `week07: test Singleton and Companion Object in main` |
