@@ -45,3 +45,10 @@ fun main() {
     println("Hasil cast + fallback: $safeString")
 
 }
+// Justifikasi 1: Java Interoperability
+println("\n=== TEST JAVA INTEROP ===")
+val javaResponse = LegacyJavaAPI.fetchServerStatus()
+// Kita menekan tombol !! karena KITA TAHU implementasi Java-nya aman
+val statusLength = javaResponse!!.length
+println("Status dari Java: $javaResponse (Length: $statusLength)")
+
