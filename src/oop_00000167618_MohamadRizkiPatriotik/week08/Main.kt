@@ -52,3 +52,12 @@ val javaResponse = LegacyJavaAPI.fetchServerStatus()
 val statusLength = javaResponse!!.length
 println("Status dari Java: $javaResponse (Length: $statusLength)")
 
+// Justifikasi 2: Unit Testing
+runMockUnitTest()
+
+// ===== NotificationService demo (Smart Cast) =====
+println("\n=== TEST SMART CAST ===")
+val service = NotificationService()
+service.processUser(UserProfile("Budi", "budi@mail.com"))
+service.processUser(UserProfile("Andi", null))
+}
