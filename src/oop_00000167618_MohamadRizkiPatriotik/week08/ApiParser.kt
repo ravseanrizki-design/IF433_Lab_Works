@@ -21,3 +21,15 @@ class ApiParser {
             else -> null // tipe tidak dikenal atau null
         }
     }
+
+    fun checkout(product: Product) {
+        val id = when (product) {
+            is Electronic -> product.id
+            is Clothing -> product.id
+        }
+
+        // Java Interop: kita yakin service Java selalu mengembalikan Transaction ID
+        val transactionId = JavaPaymentService.processPayment(id)!!
+        println("   -> Pembayaran sukses. Transaction ID: $transactionId")
+    }
+}
