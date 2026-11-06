@@ -12,11 +12,11 @@ class ApiParser {
         return when (type) {
             "ELECTRONIC" -> {
                 val warranty = rawJson["warranty"] as? Int ?: 12
-                Electronic(id, name, warranty)
+                Product.Electronic(id, name, warranty)
             }
             "CLOTHING" -> {
                 val size = rawJson["size"] as? String ?: "All Size"
-                Clothing(id, name, size)
+                Product.Clothing(id, name, size)
             }
             else -> null // tipe tidak dikenal atau null
         }
@@ -24,8 +24,8 @@ class ApiParser {
 
     fun checkout(product: Product) {
         val id = when (product) {
-            is Electronic -> product.id
-            is Clothing -> product.id
+            is Product.Electronic -> product.id
+            is Product.Clothing -> product.id
         }
 
         // Java Interop: kita yakin service Java selalu mengembalikan Transaction ID
