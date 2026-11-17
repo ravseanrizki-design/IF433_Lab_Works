@@ -34,6 +34,7 @@ fun main() {
     // Pipeline tambahan: pasangan koin unik (OPEN maupun CLOSED)
     val uniquePairs = tradeHistory
         .map { it.pair }
+        .toSet()
 
     // Dashboard
     println("=== CRYPTO TRADING DASHBOARD ===")
@@ -41,5 +42,4 @@ fun main() {
 
     worstPerformersString.forEach { println(it) }
     println("Unique Pairs: $uniquePairs")
-
 }
