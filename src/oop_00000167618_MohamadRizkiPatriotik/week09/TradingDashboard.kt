@@ -31,6 +31,8 @@ fun main() {
         .sortedBy { it.roe }
         .map { "LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)" }
 
-
+    // Pipeline tambahan: pasangan koin unik (OPEN maupun CLOSED)
+    val uniquePairs = tradeHistory
+        .map { it.pair }
 
 }
